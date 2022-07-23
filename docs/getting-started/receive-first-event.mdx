@@ -1,0 +1,38 @@
+---
+sidebar_position: 3
+---
+
+# Receive first event
+
+Receive the first event for your Pong by e.g. sending a GET request via curl to your Pong url.
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+<Tabs>
+<TabItem value="curl" label="Curl">
+
+```bash
+curl -fsS -o /dev/null https://spo.ng/a0615c72-8c6c-4313-99dc-e7f193a31d5e
+```
+
+</TabItem>
+<TabItem value="py" label="Python">
+
+```py
+import requests
+requests.get("https://spo.ng/a0615c72-8c6c-4313-99dc-e7f193a31d5e")
+```
+
+</TabItem>
+<TabItem value="js" label="JavaScript">
+
+```js
+var https = require('https');
+https.get('https://spo.ng/a0615c72-8c6c-4313-99dc-e7f193a31d5e').on('error', (err) => {
+  console.log('Ping failed: ' + err)
+});
+```
+
+</TabItem>
+</Tabs>
